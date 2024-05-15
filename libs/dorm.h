@@ -1,24 +1,18 @@
 #ifndef DORM_H
 #define DORM_H
 
-#include "gender.h"
+#include "student.h"
 
-/**
- * @brief define your structure, enums, globally accessible variables, and function prototypes here.
- * The actual function implementation should be defined in the corresponding source file.
- *
- */
-
-struct dorm_t
-{
-  char nama[20];
-  unsigned short kapasitas;
-  enum gender_t gender;
-  unsigned short residents_num;
+struct dorm_t {
+    char name[60];
+    unsigned short capacity;
+    unsigned short residents;
+    enum gender_t gender;
 };
 
-struct dorm_t create_dorm(char *_nama, unsigned short _kapasitas, enum gender_t _gender);
-void print_dorm(struct dorm_t *_dorm, int count);
-void print_dorm_detail(struct dorm_t *_dorm, int count);
+struct dorm_t create_dorm(const char *name, unsigned short capacity, enum gender_t gender);
+void print_dorm_detail(struct dorm_t *dorms, int count);
+void print_dorm(struct dorm_t *dorms, int count);
+void assign_student(struct student_t *student, struct dorm_t *dorm);
 
 #endif
