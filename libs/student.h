@@ -11,6 +11,8 @@ enum gender_t {
 };
 
 enum status_t {
+    NOT_ASSIGNED,
+    ASSIGNED,
     LEFT
 };
 

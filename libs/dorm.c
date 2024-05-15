@@ -14,7 +14,8 @@ struct dorm_t create_dorm(const char *name, unsigned short capacity, enum gender
 
 void print_dorm_detail(struct dorm_t *dorms, int count) {
     for (int i = 0; i < count; ++i) {
-        printf("%s|%u|%u|%s\n",dorms[i].name,
+        printf("%s|%u|%u|%s\n",
+dorms[i].name,
             dorms[i].capacity,
             dorms[i].residents,
             (dorms[i].gender == GENDER_MALE) ? "male" : "female");
