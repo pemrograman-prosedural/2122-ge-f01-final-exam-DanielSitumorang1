@@ -1,10 +1,6 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
-#define NIM_SIZE 12
-#define NAME_SIZE 40
-#define YEAR_SIZE 5
-
 enum gender_t {
     GENDER_MALE,
     GENDER_FEMALE
@@ -12,6 +8,7 @@ enum gender_t {
 
 enum status_t {
     NOT_ASSIGNED,
+    UNASSIGNED,
     ASSIGNED,
     LEFT
 };

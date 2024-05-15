@@ -17,6 +17,8 @@ void assign_student(struct student_t *student, struct dorm_t *dorm) {
     if (dorm->residents < dorm->capacity && dorm->gender == student->gender) {
         dorm->residents++;
         student->status = ASSIGNED;
+        student->status = UNASSIGNED;
+        student->status = NOT_ASSIGNED;
         strcpy(student->dorm_name, dorm->name);
     }
 }

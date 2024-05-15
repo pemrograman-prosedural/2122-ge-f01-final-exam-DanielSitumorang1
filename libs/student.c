@@ -9,7 +9,9 @@ struct student_t create_student(const char *nim, const char *name, const char *y
     strcpy(student.year, year);
     student.gender = gender;
     student.status = NOT_ASSIGNED;
+    student.status = UNASSIGNED;
     strcpy(student.dorm_name, "not assigned");
+    strcpy(student.dorm_name, "unassigned");
     return student;
 }
 
