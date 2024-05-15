@@ -93,10 +93,6 @@ int main(int _argc, char **_argv){
             print_student_detail(students, student_count);
         } else if (strcmp(data, "student-print-all") == 0) {
             print_student(students, student_count);
-        } else if (strcmp(data, "dorm-print-all-detail") == 0) {
-            print_dorm_detail(dorms, dorm_count);
-        } else if (strcmp(data, "dorm-print-all") == 0) {
-            print_dorm(dorms, dorm_count);
         }
     }
 

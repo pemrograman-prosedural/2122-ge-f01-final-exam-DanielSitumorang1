@@ -11,8 +11,6 @@ struct dorm_t {
 };
 
 struct dorm_t create_dorm(const char *name, unsigned short capacity, enum gender_t gender);
-void print_dorm_detail(struct dorm_t *dorms, int count);
-void print_dorm(struct dorm_t *dorms, int count);
 void assign_student(struct student_t *student, struct dorm_t *dorm);
 
 #endif
